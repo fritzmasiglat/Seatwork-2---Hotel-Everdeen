@@ -1,0 +1,49 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>Hotel Everdeen - Reservations</title>
+	<link href="css/main_theme.css" rel="stylesheet">
+	<link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon">
+	<link rel="icon" href="images/favicon.ico" type="image/x-icon">
+</head>
+
+<body>
+		<div id="content-container">
+                <div id="top">
+					<div id="hotel_name"></div>
+                  <div id="nav-container">
+                    <ul>
+                        <li><a href="index.erb">Home</a></li>
+                        <li><a href="about.erb">About</a></li>
+                        <li><a href="rooms.erb">Rooms</a></li>
+                        <li><a href="reservations.erb">Reservations</a></li>
+                    </ul>
+                  </div>
+                </div>
+                
+                <div id="container-reserve">
+                	<div id="content-form">
+                        <form method="POST" action="/reserve">
+                        <center><h2>Room Reservation</h2></center>
+                        Name: <input type="text" name="customerName" /><br>
+                        Address: <input type="text" name="address"/><br>
+                        Email Address: <input type="text" name="email"/><br>
+                        Contact Number: <input type="text" name="contactNumber"/><br>
+                        Room Type: 
+                        <select name="roomType">
+                            <option value="Single-Bed Room">Single-Bed Room</option>
+                            <option value="Double-Bed Room">Double-Bed Room</option>
+                            <option value="Luxury">Luxury Room</option>
+                        </select>
+                        <br>
+                        Date of Reservation: <input type="date" name="dateReserve"/>
+                        <br><br>
+                        <center><input type="submit" id="submit-btn"/></center>
+                        </form>
+
+                    </div>
+  		        </div>
+        </div>       
+</body>
+</html>

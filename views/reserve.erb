@@ -1,0 +1,55 @@
+<!--DOCTYPE html-->
+
+<html>
+  <head>
+      <title>Hotel Everdeen - Room Reservation</title>
+      <link href="css/main_theme.css" rel="stylesheet">
+      <link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon">
+      <link rel="icon" href="images/favicon.ico" type="image/x-icon">
+  </head>
+    <body>
+      <div id="content-container">
+      <div id="top">
+          <div id="hotel_name"></div>
+          <div id="nav-container">
+              <br>
+              <br>
+          </div>
+      </div>
+      <div id="container-reserve">
+        <center>
+        <div id="reservation-details">
+        <h1>Room Reservation - Successful</h1>
+        <table>
+          <tr>
+            <td><label class="lbl">Name:</label> </td>
+            <td><%= @room_reservation.customerName %></td>
+          </tr>
+
+          <tr>
+            <td><label class="lbl">Address:</label> </td>
+            <td><%= @room_reservation.address %></td>
+          </tr>
+          <tr>
+            <td><label class="lbl">Email:</label> </td>
+            <td><%= @room_reservation.email %></td>
+          </tr>
+          <tr>
+            <td><label class="lbl">Contact Number:</label> </td>
+            <td><%= @room_reservation.contactNumber %></td>
+          </tr>
+          <tr>
+            <td><label class="lbl">Room Type:</label> </td>
+            <td><%= @room_reservation.roomType %></td>
+          </tr>
+          <tr>
+            <td><label class="lbl">Date Reserved:</label> </td>
+            <td><%= @room_reservation.dateReserve %></td>
+          </tr>
+        </table>
+      </div><br><br>
+      <a href="index.erb" id="link">Go back to Home</a>
+      </center>
+      </div>
+  </body>
+</html>
